@@ -1,6 +1,6 @@
 [build]
   publish = "dist/cutelaser"
-  command = "npm run build"
+  command = "npm run build --openssl-legacy-provider"
 [[redirects]]
   from = "/*"
   to = "/index.html"
