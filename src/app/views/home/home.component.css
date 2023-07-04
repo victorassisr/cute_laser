@@ -3,9 +3,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #f0f0f0;
+    width: 100%;
+    min-height: calc(100vh - 182px);
+    background-color: #FFF;
 }
 
 picture {
