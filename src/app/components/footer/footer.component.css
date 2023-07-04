@@ -2,6 +2,7 @@ footer {
     display: flex;
     flex-direction: column;
     background: var(--rose-color);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 .section {
@@ -16,12 +17,29 @@ footer {
     max-width: 100px;
 }
 
-.wpp-icon {
+.icon {
     display: inline-block;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
+.wpp-icon {
     width: 1.5em;
     height: 1.5em;
-    background: url('../../../assets/wpp_logo.svg') no-repeat;
-    vertical-align: middle;
+    background-image: url('../../../assets/wpp_logo.svg');
+}
+
+.email-icon {
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url('../../../assets/email_logo.png');
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 600px) {
