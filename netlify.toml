@@ -3,6 +3,8 @@
   command = "CI= ng build --prod"
 [context.production]
   environment = { NODE_VERSION = "16.0.0" }
+[context.deploy-preview]
+  environment = { NODE_VERSION = "16.0.0" }
 [[redirects]]
   from = "/*"
   to = "/index.html"
