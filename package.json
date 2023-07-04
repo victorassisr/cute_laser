@@ -1,10 +1,11 @@
 {
   "name": "cutelaser",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
