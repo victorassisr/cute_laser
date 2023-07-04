@@ -2,9 +2,9 @@
   publish = "dist/cutelaser"
   command = "CI= ng build --prod"
 [context.production]
-  environment = { NODE_VERSION = "16.16.0" NODE_OPTIONS=--openssl-legacy-provider }
+  environment = { NODE_VERSION = "18.16.1" NODE_OPTIONS=--openssl-legacy-provider }
 [context.deploy-preview]
-  environment = { NODE_VERSION = "16.16.0" NODE_OPTIONS=--openssl-legacy-provider }
+  environment = { NODE_VERSION = "18.16.1" NODE_OPTIONS=--openssl-legacy-provider }
 [[redirects]]
   from = "/*"
   to = "/index.html"
