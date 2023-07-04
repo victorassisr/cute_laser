@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-body, html {
+body {
     display: flex;
-    flex: 1;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+:root {
+    --rose-color: #f7dadf;
+    --body-text: #555555;
 }
