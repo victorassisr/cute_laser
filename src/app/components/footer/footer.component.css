@@ -26,15 +26,15 @@ footer {
 }
 
 .wpp-icon {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
     background-image: url('../../../assets/wpp_logo.svg');
 }
 
 .email-icon {
     width: 1.2em;
     height: 1.2em;
-    background-image: url('../../../assets/email_logo.png');
+    background-image: url('../../../assets/email_logo.svg');
 }
 
 a {
