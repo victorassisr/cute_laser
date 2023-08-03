@@ -1,7 +1,7 @@
 footer {
     display: flex;
     flex-direction: column;
-    background: var(--rose-color);
+    background: var(--bg-dark);
     color: rgba(0, 0, 0, 0.75);
 }
 
@@ -9,37 +9,42 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--body-text);
+    color: var(--body-text-light);
     padding: 1em;
 }
 
 .link__image{
-    max-width: 100px;
+    max-width: 50px;
 }
 
 .icon {
     display: inline-block;
-    vertical-align: middle;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     margin-right: 4px;
 }
 
 .wpp-icon {
-    width: 1.2em;
-    height: 1.2em;
-    background-image: url('../../../assets/wpp_logo.svg');
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    background-image: url('../../../assets/wpp_logo_light.svg');
 }
 
 .email-icon {
-    width: 1.2em;
-    height: 1.2em;
-    background-image: url('../../../assets/email_logo.svg');
+    width: 1em;
+    height: 1em;
+    vertical-align: -webkit-baseline-middle;
+    background-image: url('../../../assets/email_logo_light.svg');
 }
 
 a {
-    color: #000;
-    text-decoration: underline;
+    color: var(--body-text-light);
+    text-decoration: none;
+}
+
+.contact {
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 600px) {
