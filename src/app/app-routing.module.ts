@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router'; // CLI imports router
 const routes: Routes = [
   { path: 'personalized', loadChildren: () => import('./views/personalized/personalized.module').then(m => m.PersonalizedModule) },
   { path: 'about', loadChildren: () => import('./views/about/about.module').then(m => m.AboutModule) },
+  { path: 'me', loadChildren: () => import('./views/melhor-envio/melhor-envio.module').then(m => m.MelhorEnvioModule) },
   { path: 'invoice', loadChildren: () => import('./views/invoice/invoice.module').then(m => m.InvoiceModule) },
   { path: '**', loadChildren: () => import('./views/home/home.module').then(m => m.HomeModule) },
 ]; // sets up routes constant where you define your routes
