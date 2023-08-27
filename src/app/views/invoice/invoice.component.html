@@ -1,0 +1,23 @@
+<header>
+    <div class="logo"></div>
+    <div class="brand"></div>
+</header>
+<main class="main-content">
+    <hr class="divider">
+    <h1 class="title"><span class="title-text">Orçamento</span></h1>
+    <div class="header-list" #headerList>
+        <div class="list-title">Descrição</div>
+        <div class="list-title">Valor</div>
+    </div>
+    <ul class="list-items">
+        <li class="items"
+        *ngFor="let item of invoice.products; let i = index; let odd = odd; let last = last;" [ngClass]="{even: !odd}">
+            <span class="item">{{item.name}}</span>
+            <span class="item text-right">{{item.value | currency : 'BRL' }}</span>
+        </li>
+        <li class="items" [ngClass]="{even: isOdd}">
+            <span class="item">Total</span>
+            <span class="item text-right">{{totalValue | currency : 'BRL' }}</span>
+        </li>
+    </ul>
+</main>

@@ -1,0 +1,102 @@
+.main-content {
+    width: 100%;
+    /* max-width: 600px; */
+    background-color: #000;
+    color: #FFF;
+    box-shadow: none;
+    padding: 0 1.5em;
+    margin: 0 auto;
+    min-height: calc(100vh - 390px);
+}
+
+header{
+    width: 100%;
+    /* max-width: 600px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    padding: 1.5em 1.5em 0 1.5em;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 100%;
+    color: var(--body-text-light);
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url('../../../assets/logo.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    /* border: 6px solid #FFF; */
+    background-position: center;
+    border-radius: 100%;
+}
+
+.brand {
+    width: 150px;
+    height: 2em;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url('../../../assets/brand_cute_laser.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.title {
+    font-family: Sacramento;
+    color: var(--body-text-dark);
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: var(--body-text-light);
+}
+
+.list-items {
+    padding: 0;
+}
+
+.items {
+    list-style: none;
+}
+
+.even {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.header-list {
+    width: 100%;
+    display: flex;
+    font-family: Westmount;
+}
+
+.item {
+    display: inline-block;
+    width: 50%;
+    max-width: 50%;
+    font-family: Westmount;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.list-title {
+    vertical-align: middle;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.b-r-w {
+    border-right: 1px solid #fff;
+}
