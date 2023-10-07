@@ -1,6 +1,7 @@
 main {
     justify-content: center;
     align-items: center;
+    padding-top: 1.5em;
 }
 
 picture {
@@ -19,4 +20,8 @@ p, h1{
 
 .link__image{
     max-width: 100px;
+}
+
+.social {
+    color: var(--body-text-dark);
 }
