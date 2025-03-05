@@ -9,9 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MelhorEnvioComponent implements OnInit {
 
-  private code: string = '';
-  private baseUrl = 'https://sandbox.melhorenvio.com.br';
-  private urlToken = `${this.baseUrl}/oauth/token`;
+  private code: string | null = '';
+  private baseUrl = 'https://api-cute-laser.vercel.app';
 
   constructor(
     private activatedRouter: ActivatedRoute,
@@ -27,29 +26,22 @@ export class MelhorEnvioComponent implements OnInit {
     if(this.code) {
 
       const body = {
-        grant_type: "authorization_code",
-        client_id: 3393,
-        client_secret: "SDCS9VxIwsALZis2AnFuOGGmnfoKxthJmC7zMdMb",
-        redirect_uri: "https://cutelaser.art.br/me",
-        refresh_token: "",
         code: this.code
       };
 
-      this.http.post(this.urlToken, body, {
+      this.http.post(`${this.baseUrl}/melhor-envio/auth`, body, {
         headers: {
           Accept: 'application/json',
-          'Content-Type': 'application/json',
-          'User-Agent': 'teste victorassis545@gmail.com'
+          'Content-Type': 'application/json'
         }
       }).subscribe({
         next: res => {
-          console.log(res);
+          console.log('RESPOSTA TKEN', res);
         },
         error: err => {
-          console.log(err);
+          console.log('ERRO RESPOSTA TKEN', err);
         }
       });
     }
   }
-
 }
