@@ -35,11 +35,11 @@ export class MelhorEnvioComponent implements OnInit {
           'Content-Type': 'application/json'
         }
       }).subscribe({
-        next: res => {
-          console.log('RESPOSTA TKEN', res);
+        next: _res => {
+          window.location.href="https://cutelaser.art.br"
         },
-        error: err => {
-          console.log('ERRO RESPOSTA TKEN', err);
+        error: _err => {
+          window.location.href="https://cutelaser.art.br"
         }
       });
     }
